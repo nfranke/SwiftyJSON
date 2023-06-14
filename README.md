@@ -1,14 +1,8 @@
 # SwiftyJSON
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![CocoaPods](https://img.shields.io/cocoapods/v/SwiftyJSON.svg) ![Platform](https://img.shields.io/badge/platforms-iOS%208.0%20%7C%20macOS%2010.10%20%7C%20tvOS%209.0%20%7C%20watchOS%203.0-F28D00.svg) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Platform](https://img.shields.io/badge/platforms-iOS%208.0%20%7C%20macOS%2010.10%20%7C%20tvOS%209.0%20%7C%20watchOS%203.0-F28D00.svg)
 
 SwiftyJSON makes it easy to deal with JSON data in Swift.
-
-Platform | Build Status
----------| --------------| 
-*OS      | [![Travis CI](https://travis-ci.org/SwiftyJSON/SwiftyJSON.svg?branch=master)](https://travis-ci.org/SwiftyJSON/SwiftyJSON)    | 
-[Linux](https://github.com/IBM-Swift/SwiftyJSON)      | [![Build Status](https://travis-ci.org/IBM-Swift/SwiftyJSON.svg?branch=master)](https://travis-ci.org/IBM-Swift/SwiftyJSON)     | 
-
 
 1. [Why is the typical JSON handling in Swift NOT good](#why-is-the-typical-json-handling-in-swift-not-good)
 2. [Requirements](#requirements)
@@ -87,25 +81,12 @@ if let userName = result.string {
 
 ## Integration
 
-#### CocoaPods (iOS 8+, OS X 10.9+)
-
-You can use [CocoaPods](http://cocoapods.org/) to install `SwiftyJSON` by adding it to your `Podfile`:
-
-```ruby
-platform :ios, '8.0'
-use_frameworks!
-
-target 'MyApp' do
-    pod 'SwiftyJSON', '~> 4.0'
-end
-```
-
 #### Carthage (iOS 8+, OS X 10.9+)
 
 You can use [Carthage](https://github.com/Carthage/Carthage) to install `SwiftyJSON` by adding it to your `Cartfile`:
 
 ```
-github "SwiftyJSON/SwiftyJSON" ~> 4.0
+github "nfranke/SwiftyJSON" "master"
 ```
 
 If you use Carthage to build your dependencies, make sure you have added `SwiftyJSON.framework` to the "Linked Frameworks and Libraries" section of your target, and have included them in your Carthage framework copying build phase.
@@ -121,7 +102,7 @@ import PackageDescription
 let package = Package(
     name: "YOUR_PROJECT_NAME",
     dependencies: [
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "4.0.0"),
+        .package(url: "https://github.com/nfranke/SwiftyJSON.git", from: "4.0.0"),
     ]
 )
 ```
